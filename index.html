@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anis Arlyanee — Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#faf5ff',
+              100: '#f3e8ff',
+              200: '#e9d5ff',
+              600: '#9333ea',
+              700: '#7e22ce',
+              800: '#6b21a8',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-neutral-50 text-neutral-800 antialiased selection:bg-purple-100 selection:text-purple-900">
+
+  <!-- Sticky Glass Navbar -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 border-b border-neutral-200/80 shadow-sm">
+    <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-bold tracking-tight text-neutral-900 text-lg">Anis Arlyanee</a>
+      <nav class="hidden sm:flex items-center gap-6 text-sm font-medium text-neutral-600">
+        <a href="#about" class="hover:text-purple-600 transition">About</a>
+        <a href="#education" class="hover:text-purple-600 transition">Education</a>
+        <a href="#experience" class="hover:text-purple-600 transition">Experience</a>
+        <a href="#projects" class="hover:text-purple-600 transition">Project</a>
+        <a href="#involvement" class="hover:text-purple-600 transition">Involvement</a>
+        <a href="#contact" class="hover:text-purple-600 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 py-16 space-y-24">
+
+    <!-- Hero Section with Photo on the Right -->
+    <section id="about" class="grid grid-cols-1 md:grid-cols-5 gap-12 items-center">
+      
+      <!-- Text Content (Left side) -->
+      <div class="space-y-6 md:col-span-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-fuchsia-50 text-fuchsia-700 border border-fuchsia-200">
+          <span class="w-2 h-2 rounded-full bg-fuchsia-500 animate-pulse"></span>
+          Available for opportunities
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-neutral-900">
+          Hello, I'm <span class="text-purple-600">Anis Arlyanee!</span>
+        </h1>
+
+        <p class="text-xl text-neutral-600 font-medium">
+          Motivated Information Systems graduate with a passion for software development and continuous improvement.
+        </p>
+
+        <p class="text-neutral-600 leading-relaxed">
+          Bachelor of Computer Science (Information Systems) graduate from Universiti Malaysia Sarawak (UNIMAS). Eager to apply my technical knowledge in frontend development, code quality enhancement, and Agile methodologies to collaborate with diverse teams and contribute to organisational success while continuously growing both professionally and personally.
+        </p>
+
+        <!-- Technical Toolkit Badges -->
+        <div class="pt-4 space-y-4">
+          <h3 class="text-xs font-bold uppercase tracking-wider text-neutral-400">Technical Toolkit</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-white border border-neutral-200 rounded-lg text-xs font-medium text-neutral-700 shadow-sm">Java & PHP</span>
+            <span class="px-3 py-1 bg-white border border-neutral-200 rounded-lg text-xs font-medium text-neutral-700 shadow-sm">JavaScript</span>
+            <span class="px-3 py-1 bg-white border border-neutral-200 rounded-lg text-xs font-medium text-neutral-700 shadow-sm">Python & C</span>
+            <span class="px-3 py-1 bg-white border border-neutral-200 rounded-lg text-xs font-medium text-neutral-700 shadow-sm">SonarQube</span>
+            <span class="px-3 py-1 bg-white border border-neutral-200 rounded-lg text-xs font-medium text-neutral-700 shadow-sm">Tailwind CSS</span>
+            <span class="px-3 py-1 bg-white border border-neutral-200 rounded-lg text-xs font-medium text-neutral-700 shadow-sm">SQL / MySQL</span>
+            <span class="px-3 py-1 bg-white border border-neutral-200 rounded-lg text-xs font-medium text-neutral-700 shadow-sm">Azure DevOps</span>
+            <span class="px-3 py-1 bg-white border border-neutral-200 rounded-lg text-xs font-medium text-neutral-700 shadow-sm">Git & CI/CD</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile Photo (Right side) -->
+      <div class="md:col-span-2">
+        <!-- Replace the src below with your actual image path, e.g., src="my-photo.jpg" -->
+        <img src="profile.jpeg" alt="Anis Arlyanee" class="rounded-3xl shadow-lg object-cover w-full h-auto aspect-[4/5] border-4 border-white" />
+      </div>
+
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="space-y-8 p-8 bg-purple-50 rounded-3xl border border-purple-100">
+      <div>
+        <h2 class="text-2xl font-bold text-neutral-900 tracking-tight flex items-center gap-2">
+          <i data-lucide="graduation-cap" class="text-purple-600"></i> Education
+        </h2>
+      </div>
+
+      <div class="space-y-6">
+        <div>
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-1">
+            <h3 class="text-lg font-bold text-neutral-900">Universiti Malaysia Sarawak (UNIMAS)</h3>
+            <span class="text-sm font-medium text-purple-600">2022 - 2026</span>
+          </div>
+          <p class="text-sm font-medium text-neutral-800 mb-2">Bachelor in Computer Science (Information System) with Honours</p>
+          <ul class="text-sm text-neutral-600 space-y-1 list-disc list-inside">
+            <li><strong>CGPA:</strong> 3.39 (Dean's List Award for 3 semesters)</li>
+            <li><strong>MUET:</strong> Band 4.5</li>
+          </ul>
+        </div>
+        
+        <div class="border-t border-purple-200/60 pt-6">
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-1">
+            <h3 class="text-lg font-bold text-neutral-900">Universiti Teknologi MARA (UiTM) Sarawak</h3>
+            <span class="text-sm font-medium text-purple-600">2019 - 2022</span>
+          </div>
+          <p class="text-sm font-medium text-neutral-800 mb-2">Diploma in Computer Science</p>
+          <ul class="text-sm text-neutral-600 space-y-1 list-disc list-inside">
+            <li><strong>CGPA:</strong> 3.53 (Dean's List Award for 2 semesters)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="space-y-8">
+      <div>
+        <h2 class="text-2xl font-bold text-neutral-900 tracking-tight">Experience</h2>
+        <p class="text-sm text-neutral-500">My professional and internship journey.</p>
+      </div>
+
+      <div class="border-l-2 border-purple-200 ml-3 pl-6 space-y-10">
+        <!-- Job 1 -->
+        <div class="relative">
+          <span class="absolute -left-[31px] top-1.5 h-3.5 w-3.5 rounded-full bg-white border-2 border-purple-600"></span>
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-1">
+            <h3 class="text-lg font-bold text-neutral-900">Intern | Software Engineering Department</h3>
+            <span class="text-xs font-medium bg-purple-100 text-purple-800 px-2.5 py-0.5 rounded-full w-max">2025</span>
+          </div>
+          <div class="text-sm font-medium text-purple-600 mb-3">PETRONAS Digital Sdn. Bhd.</div>
+          <ul class="text-sm text-neutral-600 leading-relaxed list-disc list-outside ml-4 space-y-1.5">
+            <li>Resolved frontend code quality issues and implemented enhancements to improve maintainability and compliance with coding standards.</li>
+            <li>Performed UI and unit testing, bug fixing, and validation activities to ensure application reliability and functionality.</li>
+            <li>Collaborated with developers through code reviews, pull requests, and Agile ceremonies to support continuous improvement and project delivery.</li>
+          </ul>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="relative">
+          <span class="absolute -left-[31px] top-1.5 h-3.5 w-3.5 rounded-full bg-white border-2 border-neutral-400"></span>
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-1">
+            <h3 class="text-lg font-bold text-neutral-900">Intern | Admin & HR Division</h3>
+            <span class="text-xs font-medium bg-neutral-100 text-neutral-600 px-2.5 py-0.5 rounded-full w-max">2021 - 2022</span>
+          </div>
+          <div class="text-sm font-medium text-neutral-500 mb-3">Ministry of Modernization of Agriculture, Native Land and Regional Development</div>
+          <ul class="text-sm text-neutral-600 leading-relaxed list-disc list-outside ml-4 space-y-1.5">
+            <li>Developed a Staff Attendance System to automate and streamline attendance tracking processes, reducing errors and saving time.</li>
+            <li>Maintained and updated the ministry's website and social media platforms, ensuring consistent engagement with the public.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section (1 per line layout) -->
+    <section id="projects" class="space-y-8">
+      <div>
+        <h2 class="text-2xl font-bold text-neutral-900 tracking-tight">Key Projects</h2>
+        <p class="text-sm text-neutral-500">Key systems and development work.</p>
+      </div>
+
+      <div class="grid grid-cols-1 gap-8">
+        
+        <!-- Project 1 (Horizontal Layout on Desktop) -->
+        <div class="border border-neutral-200 bg-white rounded-2xl shadow-sm flex flex-col md:flex-row overflow-hidden hover:border-purple-300 transition group">
+          <!-- Project Image -->
+          <img src="clubhub.png" alt="ClubHub System" class="w-full md:w-2/5 h-48 md:h-auto object-cover border-b md:border-b-0 md:border-r border-neutral-100 shrink-0" />
+          
+          <div class="p-6 md:p-8 flex flex-col flex-grow">
+            <div class="flex items-center justify-between text-xs font-semibold uppercase tracking-wider text-purple-600 mb-2">
+              <span>Final Year Project</span>
+            </div>
+            <h3 class="text-xl font-bold text-neutral-900 group-hover:text-purple-700 transition-colors mb-3">ClubHub System</h3>
+            <p class="text-sm text-neutral-600 leading-relaxed mb-6">
+              A centralised web platform streamlining club discovery, registration, membership approvals, and activity communication across the university.
+            </p>
+            <div class="pt-2 mt-auto">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="text-[11px] font-medium bg-purple-50 border border-purple-100 px-2.5 py-1 rounded-md text-purple-700">PHP</span>
+                <span class="text-[11px] font-medium bg-purple-50 border border-purple-100 px-2.5 py-1 rounded-md text-purple-700">MySQL</span>
+                <span class="text-[11px] font-medium bg-purple-50 border border-purple-100 px-2.5 py-1 rounded-md text-purple-700">Tailwind CSS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Involvement Section with Images (2 per line) -->
+    <section id="involvement" class="space-y-8">
+      <div>
+        <h2 class="text-2xl font-bold text-neutral-900 tracking-tight">Activities & Involvement</h2>
+        <p class="text-sm text-neutral-500">Leadership, events, and community engagement.</p>
+      </div>
+
+      <!-- Enforced 2 columns on medium screens and larger -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Activity 1 -->
+        <div class="bg-white border border-neutral-200 rounded-xl overflow-hidden hover:shadow-md transition">
+          <img src="sulam.jpeg" alt="SULAM" class="w-full h-40 object-cover" />
+          <div class="p-5">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-purple-600">Trainer</span>
+            <h3 class="font-bold text-neutral-900 mt-1 mb-2">Cybersecurity Awareness Workshop</h3>
+            <p class="text-xs text-neutral-600 leading-relaxed">Delivered cybersecurity sessions and guided participants on baseline protection habits.</p>
+          </div>
+        </div>
+
+        <!-- Activity 3 -->
+        <div class="bg-white border border-neutral-200 rounded-xl overflow-hidden hover:shadow-md transition">
+          <img src="sakura.jpeg" alt="Sakura Sports Club" class="w-full h-40 object-cover" />
+          <div class="p-5">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-purple-600">Committee Member</span>
+            <h3 class="font-bold text-neutral-900 mt-1 mb-2">Sakura Sports Club</h3>
+            <p class="text-xs text-neutral-600 leading-relaxed">Assisted in planning, coordinating, and managing operational logistics for club events.</p>
+          </div>
+        </div>
+        
+        <!-- Activity 4 -->
+        <div class="bg-white border border-neutral-200 rounded-xl overflow-hidden hover:shadow-md transition">
+          <img src="ukulele.jpeg" alt="Ukulele" class="w-full h-40 object-cover" />
+          <div class="p-5">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-purple-600">Participant</span>
+            <h3 class="font-bold text-neutral-900 mt-1 mb-2">Kesukarelawan Basic Ukulele</h3>
+            <p class="text-xs text-neutral-600 leading-relaxed">Coordinated programme schedules, resources, and participant logistics on-site.</p>
+          </div>
+        </div>
+
+        <!-- Activity 5 -->
+        <div class="bg-white border border-neutral-200 rounded-xl overflow-hidden hover:shadow-md transition">
+          <img src="ramadhan.jpeg" alt="Ramadhan" class="w-full h-40 object-cover" />
+          <div class="p-5">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-purple-600">Committee Member</span>
+            <h3 class="font-bold text-neutral-900 mt-1 mb-2">Projek MyRamadhan 1444H</h3>
+            <p class="text-xs text-neutral-600 leading-relaxed">Supported welfare distribution workflows and community outreach initiatives.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Footer with Logos -->
+    <section id="contact" class="pt-12 pb-8 border-t border-neutral-200 text-center space-y-4">
+      <h2 class="text-xl font-bold text-neutral-900">Let's Connect</h2>
+      
+      <!-- Contact Links -->
+      <div class="flex justify-center gap-8 pt-4 text-sm font-semibold">
+        <!-- Email Logo & Link -->
+        <a href="mailto:aarlyaneesulaiman@gmail.com" class="flex items-center gap-2 text-purple-600 hover:text-purple-800 transition">
+          <i data-lucide="mail" class="w-5 h-5"></i> Email
+        </a>
+        <!-- LinkedIn Logo & Link -->
+        <a href="https://www.linkedin.com/in/anis-arlyanee-sulaiman/" target="_blank" class="flex items-center gap-2 text-neutral-700 hover:text-purple-600 transition">
+          <i data-lucide="linkedin" class="w-5 h-5"></i> LinkedIn
+        </a>
+      </div>
+      
+      <p class="text-xs text-neutral-400 mt-8">Based in Kuching, Sarawak</p>
+    </section>
+
+  </main>
+
+  <script>
+    // This initializes the logos/icons (Mail and LinkedIn)
+    lucide.createIcons();
+  </script>
+</body>
+</html>
